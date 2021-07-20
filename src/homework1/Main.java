@@ -10,8 +10,6 @@ package homework1;
 // Если участник не смог пройти одно из препятствий, то дальше по списку он препятствий не идет.
 
 public class Main {
-    private static Object Treadmill;
-
     public static void main(String[] args) {
 //
 //        RunJumpable[] rJ = {
@@ -24,10 +22,9 @@ public class Main {
 //            rJ[i].run (Treadmill l);
 //        }
 Cat cat = new Cat ("Bazuka");
-cat.run ();
-cat.jump ();
+cat.run (Treadmill);
+cat.jump (Wall);
         }
-
     }
 
 
