@@ -16,7 +16,6 @@ public class Main {
                 "Коробка","Шайба","Гайка",
                 "Ключ","Винт","Гайка",
                 "Коробка","Винт","Гайка",};
-
         Set<String> setWords = new HashSet<>();
 
         Collections.addAll(setWords, words);
