@@ -12,7 +12,7 @@ public class Robot implements RunJumpable {
     @Override
     public boolean run(Treadmill t) {
         if (run_dist > t.len) {
-            System.out.println (name + " успешно пробежал" + t.len + " метров");
+            System.out.println (name + "  успешно пробежал" + t.len + " метров");
             if (run_dist < t.len) {
                 System.out.println ("Не смог пробежать");
             }
