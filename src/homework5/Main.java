@@ -69,17 +69,12 @@ public class Main {
 
 
     public static void twoMassive() {
-
         int size = 10000000;
-
         double[] arr = new double[size];
         double[] arr1 = new double[size / 2];
         double[] arr2 = new double[size / 2];
-
         Arrays.fill (arr, 1);
-
         long startTime = System.currentTimeMillis ();
-
         System.arraycopy (arr, 0, arr1, 0, h);
         System.arraycopy (arr, h, arr2, 0, h);
 
