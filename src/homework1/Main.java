@@ -11,21 +11,21 @@ package homework1;
 
 public class Main {
     public static void main(String[] args) {
-//
-//        RunJumpable[] rJ = {
-//                new Cat ("Barsik"),
-//                new Human ("Jack"),
-//                new Robot ("Altron")
-//        };
-//        for (int i = 0; i < rJ.length; i++) {
-//            rJ[i].jump (Wall h);
-//            rJ[i].run (Treadmill l);
-//        }
-Cat cat = new Cat ("Bazuka");
-cat.run (Treadmill);
-cat.jump (Wall);
+        Treadmill treadmill = new Treadmill (1000);
+        Wall wall = new Wall (6);
+
+        RunJumpable[] rJ = {
+                new Cat ("Barsik"),
+                new Human ("Jack"),
+                new Robot ("Altron")
+        };
+        for (int i = 0; i < rJ.length; i++) {
+            rJ[i].jump (wall);
+            rJ[i].run (treadmill);
+
         }
     }
+}
 
 
 
